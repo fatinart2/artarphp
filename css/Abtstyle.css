@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    z-index: 900;
+    
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+    font-family: 'Rubik', sans-serif;
+    font-size: small;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after{
+    content: "";
+    display: table;
+    clear: both;
+    font-family: 'Rubik', sans-serif;
+    font-size: small;
+   
+  }
+  .container {
+    margin: 20px;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    z-index: 900;
+   
+  
+  }
+
+
+  .pedit{
+    font-family: 'Rubik', sans-serif;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px !important;
+    font-size: small;
+
+    
+  }
+
+
+  @media (min-width: 300px) {
+    .p { grid-template-columns: repeat(1, 1fr); }
+  }
